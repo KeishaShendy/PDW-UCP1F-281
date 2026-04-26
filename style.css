@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #0d6efd, #3a86ff);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+nav {
+  background-color: #083d8c;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #198754;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.btn-link:hover {
+  background-color: #157347;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#resultBox {
+  background-color: #eef5ff;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #0d6efd;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background-color: #0d6efd;
+  color: white;
+  margin-top: 30px;
+}
