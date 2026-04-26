@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Anggota - Tech Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Form Pendaftaran Anggota</h1>
+    <p class="subtitle">Silakan isi data anggota baru di bawah ini.</p>
+  </header>
+
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./form.html">Form Anggota</a>
+    <a href="./gallery.html">Multimedia</a>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Input Data Anggota</h2>
+
+      <form id="memberForm">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Masukkan nama" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email" required>
+
+        <label for="minat">Bidang Minat</label>
+        <select id="minat" required>
+          <option value="">-- Pilih Bidang Minat --</option>
+          <option value="Web Development">Web Development</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+          <option value="Cyber Security">Cyber Security</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Mobile Development">Mobile Development</option>
+        </select>
+
+        <button type="submit">Simpan Data</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Hasil Input</h2>
+      <div id="resultBox">
+        <p>Data yang diinput akan tampil di sini.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Data Tersimpan Sementara</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Bidang Minat</th>
+          </tr>
+        </thead>
+        <tbody id="savedMemberTable">
+        </tbody>
+      </table>
+
+      <div class="button-group">
+        <a href="./index.html" class="btn-link">Kembali ke Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Community</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
