@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia - Tech Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Halaman Multimedia</h1>
+    <p class="subtitle">Galeri sederhana berisi gambar, video, dan audio.</p>
+  </header>
+
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./form.html">Form Anggota</a>
+    <a href="./gallery.html">Multimedia</a>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Gambar Komunitas</h2>
+      <img
+        id="galleryImage"
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
+        alt="Gambar komunitas teknologi"
+        class="main-image"
+      >
+      <div class="button-group">
+        <button onclick="changeImage()">Ganti Gambar</button>
+        <button onclick="showImageInfo()">Info Gambar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Video YouTube</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/Ke90Tje7VS0"
+          title="Video pembelajaran"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Audio</h2>
+      <audio id="myAudio" controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+      </audio>
+
+      <div class="button-group">
+        <button onclick="playAudio()">Putar Audio</button>
+        <button onclick="pauseAudio()">Hentikan Audio</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Community</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
