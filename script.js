@@ -70,11 +70,13 @@ function setupForm() {
     );
 
     const resultBox = document.getElementById("resultBox");
-    resultBox.innerHTML = `
-      <p><strong>Nama:</strong> ${nama}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Bidang Minat:</strong> ${minat}</p>
-    `;
+    if (resultBox) {
+      resultBox.innerHTML = `
+        <p><strong>Nama:</strong> ${nama}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Bidang Minat:</strong> ${minat}</p>
+      `;
+    }
 
     renderSavedTable();
     form.reset();
@@ -107,16 +109,12 @@ function showImageInfo() {
 
 function playAudio() {
   const audio = document.getElementById("myAudio");
-  if (audio) {
-    audio.play();
-  }
+  if (audio) audio.play();
 }
 
 function pauseAudio() {
   const audio = document.getElementById("myAudio");
-  if (audio) {
-    audio.pause();
-  }
+  if (audio) audio.pause();
 }
 
 renderHomeTable();
